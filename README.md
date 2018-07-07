@@ -28,21 +28,30 @@ $ node app.js
 
 * Create user
 
-curl --header "Content-Type: application/json" --request POST --data '{"username":"xyz","password":"xyz"}' http://localhost:3000/users
+```console
+$ curl --header "Content-Type: application/json" --request POST --data '{"username":"xyz","password":"xyz"}' http://localhost:3000/users
+```
 
 * Read All
 
-curl http://localhost:3000/users
+```console
+$ curl http://localhost:3000/users
+```
 
 * Read by Id
 
-curl http://localhost:3000/users/5b40d405f9ede13ede971342
+```console
+$ curl http://localhost:3000/users/5b40d405f9ede13ede971342
+```
 
 * Update
 
-curl --header "Content-Type: application/json" --request PUT --data '{"username":"xyz","password":"wxyz"}' http://localhost:3000/users/5b40d405f9ede13ede971342
+```console
+$ curl --header "Content-Type: application/json" --request PUT --data '{"username":"xyz","password":"wxyz"}' http://localhost:3000/users/5b40d405f9ede13ede971342
+```
 
 * Delete
 
-curl --request DELETE http://localhost:3000/users/5b40d405f9ede13ede971342
- 
+```console
+$ curl --request DELETE http://localhost:3000/users/5b40d405f9ede13ede971342
+```
